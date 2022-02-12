@@ -15,8 +15,7 @@ import tempfile
 
 from time import time, sleep
 
-# Acquire a lock on the build directory to make sure that
-# we don't cause a race condition while building
+# Acquire a lock on the build directory to make sure that we don't cause a race condition while building
 # Lock is created in `build_dir/lock.db`
 def acquire_lock(build_dir):
     try:
